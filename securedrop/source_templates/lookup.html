@@ -15,7 +15,7 @@
   {% endif %}
 </div>
 
-<h1 class="headline">{{ gettext('Submit Files or Messages') }}</h1>
+<h2 class="headline">{{ gettext('Submit Files or Messages') }}</h2>
 <p class="explanation">{{ gettext('If you are already familiar with GPG, you can optionally encrypt your files and messages with our <a href="{url}" class="text-link">public key</a> before submission. Files are encrypted as they are received by SecureDrop.').format(url=url_for('info.download_journalist_pubkey')) }}
 {{ gettext('<a href="{url}" class="text-link">Learn more</a>.').format(url=url_for('info.why_download_journalist_pubkey')) }}</p>
 
@@ -38,15 +38,15 @@
   <hr class="no-line">
   <div class="pull-right">
     <button type="submit" class="sd-button btn primary" id="submit-doc-button">
-      <img class="icon off-hover" src="{{ url_for('static', filename='i/font-awesome/checkmark-white.png') }}" width="20" height="20">
-      <img class="icon on-hover" src="{{ url_for('static', filename='i/font-awesome/checkmark-blue.png') }}" width="20" height="20">
       {{ gettext('SUBMIT') }}
     </button>
 
 
 
     <a href="{{ url_for('main.lookup') }}" class="btn secondary" id="cancel">
-      <img class="icon" src="{{ url_for('static', filename='i/font-awesome/cancel-blue.png') }}" width="20" height="20"> {{ gettext('CANCEL') }}
+      <img class="icon off-hover" src="{{ url_for('static', filename='i/x_icon-sd_blue.png') }}" width="9" height="9">
+      <img class="icon on-hover" src="{{ url_for('static', filename='i/x_icon-grimace_blue.png') }}" width="9" height="9">
+      {{ gettext('CANCEL') }}
     </a>
   </div>
 </form>

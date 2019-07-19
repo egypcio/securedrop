@@ -1,6 +1,6 @@
 =button
   button, a.btn, .btn
-    background: $color_purple_medium
+    background: $color_securedrop_blue
     box-sizing: border-box
     -moz-box-sizing: border-box
     padding: 10px 15px
@@ -43,9 +43,9 @@
         border: 1px solid transparent
 
     &:hover
-      background: white
-      color: $color_purple_medium
-      border: 1px solid $color_purple_medium
+      background: $color_grimace_blue
+      color: white
+      border: 1px solid  $color_grimace_blue
 
   .btn
     &.small
@@ -61,8 +61,13 @@
     &.secondary
       @extend .primary
       background: white
-      color: $color_purple_medium_darker
-      border: 1px solid $color_purple_medium_darker
+      color: $color_securedrop_blue
+      border: 1px solid $color_securedrop_blue
+
+    &.secondary:hover
+      background: white
+      color: $color_grimace_blue
+      border-color: $color_grimace_blue
 
     &.index
       display: block
@@ -81,8 +86,8 @@
     padding: 3px 10px
 
   a.btn:hover, .btn:hover
-    background: white
-    color: $color_purple_medium
+    background: $color_grimace_blue
+    color: white
     border: 1px solid $color_purple_medium
 
   button.alt, a.btn.alt, .btn.alt
